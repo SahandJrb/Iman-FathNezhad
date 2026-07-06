@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iman FathNezhad</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/YekanBakh/fontiran.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="panel-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-mark">ایمان</span>
+                <span class="logo-text">ایمان فتح نژاد</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">
+                        <img src="icons/bxs-dashboard(1).svg" alt="">
+                    </span> داشبورد
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <img src="icons/calendar(1).svg" alt="">
+                    </span> نوبت‌های من
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <img src="icons/person-standing(1).svg" alt="">
+                    </span> بیماران
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💬</span> پیام‌ها
+                    <span class="nav-badge">3</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <img src="icons/journal-bookmark.svg" alt="">
+                    </span> نسخه‌ها
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <img src="icons/setting.svg" alt="">
+                    </span> تنظیمات
+                </a>
+            </nav>
+
+            <a href="#" class="nav-item logout">
+                <span class="nav-icon">
+                    <img src="icons/log-out.svg" alt="">
+                </span> خروج از حساب
+            </a>
+        </aside>
+
+        <!-- Main -->
+        <div class="main-area">
+
+            <!-- Topbar -->
+            <header class="topbar">
+                <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
+
+                <div class="search-box">
+                    <input type="text" placeholder="جستجوی بیمار، نوبت یا پرونده...">
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="icon-btn" aria-label="اعلان‌ها">
+                        <img src="icons/bell.svg" alt="">
+                        <span class="dot"></span>
+                    </button>
+                    <div class="user-chip">
+                        <div class="user-avatar">س.ا</div>
+                        <div class="user-meta">
+                            <strong>دکتر سارا احمدی</strong>
+                            <span>متخصص قلب و عروق</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="content">
+
+                <div class="content-header">
+                    <div>
+                        <p class="eyebrow">پنل پزشک</p>
+                        <h1>سلام دکتر احمدی </h1>
+                        <p class="content-sub">امروز شنبه، ۱۴ تیر ۱۴۰۳ — ۶ نوبت در انتظار شماست.</p>
+                    </div>
+                    <button class="btn btn-primary">+ ثبت نوبت جدید</button>
+                </div>
+
+                <!-- Stats -->
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="icons/bxs-dashboard.svg" alt="">
+                        </span>
+                        <div>
+                            <span class="stat-num">6</span>
+                            <span class="stat-label">نوبت امروز</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="icons/person-standing.svg" alt="">
+                        </span>
+                        <div>
+                            <span class="stat-num">218</span>
+                            <span class="stat-label">بیمار فعال</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="icons/journal-bookmark(1).svg" alt="">
+                        </span>
+                        <div>
+                            <span class="stat-num">4</span>
+                            <span class="stat-label">گزارش در انتظار</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <img src="icons/star.svg" alt="">
+                        </span>
+                        <div>
+                            <span class="stat-num">4.9</span>
+                            <span class="stat-label">میانگین رضایت</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Two column: appointments + mini calendar -->
+                <section class="content-grid">
+
+                    <div class="card appointments-card">
+                        <div class="card-header">
+                            <h2>نوبت‌های امروز</h2>
+                            <a href="#" class="card-link">مشاهده همه</a>
+                        </div>
+
+                        <table class="appointments-table">
+                            <thead>
+                                <tr>
+                                    <th>بیمار</th>
+                                    <th>ساعت</th>
+                                    <th>نوع ویزیت</th>
+                                    <th>وضعیت</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="patient-cell">
+                                        <span class="avatar-sm" style="background:#c9dcd6"></span>
+                                        رضا کریمی
+                                    </td>
+                                    <td>۰۹:۳۰</td>
+                                    <td>ویزیت حضوری</td>
+                                    <td><span class="badge badge-upcoming">در انتظار</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="patient-cell">
+                                        <span class="avatar-sm" style="background:#d8cdc0"></span>
+                                        نگار صادقی
+                                    </td>
+                                    <td>۱۰:۱۵</td>
+                                    <td>مشاوره آنلاین</td>
+                                    <td><span class="badge badge-upcoming">در انتظار</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="patient-cell">
+                                        <span class="avatar-sm" style="background:#cdd4e0"></span>
+                                        حسین مرادی
+                                    </td>
+                                    <td>۱۱:۰۰</td>
+                                    <td>پیگیری درمان</td>
+                                    <td><span class="badge badge-done">انجام شد</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="patient-cell">
+                                        <span class="avatar-sm" style="background:#e0d3d8"></span>
+                                        فاطمه نوری
+                                    </td>
+                                    <td>۱۲:۳۰</td>
+                                    <td>ویزیت حضوری</td>
+                                    <td><span class="badge badge-cancel">لغو شده</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="card schedule-card">
+                        <div class="card-header">
+                            <h2>برنامه هفته</h2>
+                        </div>
+                        <ul class="schedule-list">
+                            <li><span class="day">شنبه</span><span class="count">6 نوبت</span></li>
+                            <li><span class="day">یکشنبه</span><span class="count">4 نوبت</span></li>
+                            <li><span class="day">دوشنبه</span><span class="count">8 نوبت</span></li>
+                            <li><span class="day">سه‌شنبه</span><span class="count">مرخصی</span></li>
+                            <li><span class="day">چهارشنبه</span><span class="count">5 نوبت</span></li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <!-- Recent patients -->
+                <section class="card">
+                    <div class="card-header">
+                        <h2>بیماران اخیر</h2>
+                        <a href="#" class="card-link">مشاهده همه</a>
+                    </div>
+                    <table class="appointments-table">
+                        <thead>
+                            <tr>
+                                <th>نام بیمار</th>
+                                <th>آخرین ویزیت</th>
+                                <th>تشخیص</th>
+                                <th>پرونده</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="patient-cell"><span class="avatar-sm" style="background:#c9dcd6"></span> رضا
+                                    کریمی</td>
+                                <td>۲۹ خرداد ۱۴۰۳</td>
+                                <td>فشار خون بالا</td>
+                                <td><a href="#" class="card-link">مشاهده</a></td>
+                            </tr>
+                            <tr>
+                                <td class="patient-cell"><span class="avatar-sm" style="background:#d8cdc0"></span> نگار
+                                    صادقی</td>
+                                <td>۲۵ خرداد ۱۴۰۳</td>
+                                <td>چکاپ سالانه</td>
+                                <td><a href="#" class="card-link">مشاهده</a></td>
+                            </tr>
+                            <tr>
+                                <td class="patient-cell"><span class="avatar-sm" style="background:#cdd4e0"></span> حسین
+                                    مرادی</td>
+                                <td>۲۰ خرداد ۱۴۰۳</td>
+                                <td>آریتمی خفیف</td>
+                                <td><a href="#" class="card-link">مشاهده</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+    </script>
+
+
+</body>
+
+</html>
