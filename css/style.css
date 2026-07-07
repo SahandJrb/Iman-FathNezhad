@@ -963,7 +963,7 @@ h3 {
 
 /*------ /Appointments table ------*/
 
-/* Schedule list */
+/*----- Schedule list -----*/
 .content-grid .card .schedule-list > li {
   display: flex;
   justify-content: space-between;
@@ -982,4 +982,229 @@ h3 {
 
 .content-grid .card .schedule-list .count {
   color: var(--color-muted);
+}
+
+/*----- /Schedule list -----*/
+
+/*----------------- End Panel Doctor ----------------*/
+
+/*-----------------Start Login page -----------------*/
+
+/* ===== Layout ===== */
+.login-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+/* ===== Brand side ===== */
+.brand-side {
+  background: var(--color-primary-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-content {
+  max-width: 420px;
+  position: relative;
+  z-index: 1;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 48px;
+  font-weight: 800;
+}
+
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: 1rem;
+}
+
+.brand-content h1 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.brand-content > p {
+  color: #cfe4dd;
+  margin-bottom: 40px;
+  max-width: 38ch;
+}
+
+.pulse-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pulse-line {
+  width: 100%;
+  height: 80px;
+}
+.pulse-line polyline {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw-pulse 2.4s ease-in-out infinite;
+}
+@keyframes draw-pulse {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.pulse-label {
+  margin-top: 12px;
+  color: #cfe4dd;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ===== Form side ===== */
+.form-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-header h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.login-sub {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.field input {
+  font-family: var(--font-base);
+  padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 0.92rem;
+  color: var(--color-text);
+  width: 100%;
+}
+.field input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.password-wrap {
+  position: relative;
+}
+.password-wrap input {
+  padding-left: 44px;
+}
+.toggle-password {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-password:hover {
+  background: var(--color-bg);
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-muted);
+  font-weight: 500;
+  cursor: pointer;
+}
+.checkbox-field input {
+  accent-color: var(--color-primary);
+  width: 16px;
+  height: 16px;
+}
+
+.forgot-link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.login-submit {
+  margin-top: 4px;
+}
+
+.signup-hint {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+.signup-hint a {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.signup-hint a:hover {
+  text-decoration: underline;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iman FathNezhad</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/YekanBakh/fontiran.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="login-layout">
+
+        <!-- Brand side -->
+        <div class="brand-side">
+            <div class="brand-content">
+                <div class="brand-logo">
+                    <span class="logo-mark">مهر</span>
+                    <span class="logo-text">کلینیک سلامت مهر</span>
+                </div>
+
+                <h1>به پنل پزشکان<br>خوش آمدید</h1>
+                <p>از اینجا نوبت‌های امروز، پرونده‌ی بیماران و برنامه‌ی هفتگی خود را مدیریت کنید.</p>
+
+                <div class="pulse-card">
+                    <svg viewBox="0 0 300 100" class="pulse-line">
+                        <polyline points="0,50 50,50 65,20 80,80 95,50 300,50" />
+                    </svg>
+                    <span class="pulse-label">همراه شما در مراقبت از سلامت</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form side -->
+        <div class="form-side">
+            <form class="login-card">
+                <div class="login-header">
+                    <p class="eyebrow">ورود به پنل</p>
+                    <h2>سلام دکتر عزیز </h2>
+                    <p class="login-sub">برای ادامه، وارد حساب کاربری خود شوید.</p>
+                </div>
+
+                <label class="field">
+                    <span>ایمیل یا شماره نظام پزشکی</span>
+                    <input type="text" name="username" placeholder="مثلا doctor@mehrclinic.ir" required autofocus>
+                </label>
+
+                <label class="field">
+                    <span>رمز عبور</span>
+                    <div class="password-wrap">
+                        <input type="password" name="password" id="password" placeholder="رمز عبور خود را وارد کنید"
+                            required>
+                        <button type="button" class="toggle-password" id="togglePassword"
+                            aria-label="نمایش رمز عبور">👁</button>
+                    </div>
+                </label>
+
+                <div class="field-row">
+                    <label class="checkbox-field">
+                        <input type="checkbox" name="remember">
+                        <span>مرا به خاطر بسپار</span>
+                    </label>
+                    <a href="#" class="forgot-link">رمز عبور را فراموش کرده‌اید؟</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary login-submit">ورود به پنل</button>
+
+                <p class="signup-hint">
+                    هنوز حساب کاربری ندارید؟
+                    <a href="#">درخواست عضویت پزشکان</a>
+                </p>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+
+</body>
+
+</html>
